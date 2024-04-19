@@ -101,3 +101,18 @@ class Employee extends Person {
 }
 
 const emp = new Employee("Jasurbek", "Otelbayev", 50, 400);
+
+//!How to do?
+
+let a = 10;
+let b = 20;
+
+console.log(a + b);
+
+//!What to do?
+
+function multiply(a, b) {
+  return a * b;
+}
+
+console.log(multiply(a, b));
