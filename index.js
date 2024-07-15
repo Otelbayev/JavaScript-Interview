@@ -116,3 +116,35 @@ function multiply(a, b) {
 }
 
 console.log(multiply(a, b));
+
+function MyFunction(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+MyFunction.prototype.getFullName = function () {
+  return this.name + " " + this.age;
+};
+
+const func = new MyFunction("Jasurbek", 20);
+const f = new MyFunction("None", 20);
+
+class MyClass {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  //   getFullName() {
+  //     return this.name + " " + this.age;
+  //   }
+}
+
+const obj = new MyClass("Jasurbek", 20);
+const o = new MyClass("None", 20);
+
+obj.__proto__.getFullName = function () {
+  return this.name + " " + this.age;
+};
+
+// console.log(func);
+console.log(obj);
